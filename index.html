@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Apresentação CSS Grid</title>
+  <link rel="stylesheet" href="style.css"
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#333">
+  <meta name="description" content="Uma apresentação sobre o CSS Grid">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-startup-image" href="splash.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(function(registration) {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch(function(error) {
+            console.log('Falha ao registrar o Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Apresentação CSS Grid</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#sessao1">Sessão 1</a></li>
+      <li><a href="#sessao2">Sessão 2</a></li>
+      <li><a href="#sessao3">Sessão 3</a></li>
+      <li><a href="#sessao4">Sessão 4</a></li>
+      <li><a href="#sessao5">Sessão 5</a></li>
+      <li><a href="#sessao6">Sessão 6</a></li>
+      <li><a href="#sessao7">Sessão 7</a></li>
+      <li><a href="#sessao8">Sessão 8</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="sessao1">
+      <h2>Sessão 1: Introdução ao CSS Grid</h2>
+      <p>O CSS Grid é um sistema de layout bidimensional que permite criar designs complexos e responsivos para páginas da web. Ele oferece um conjunto de propriedades e regras que permitem posicionar elementos HTML em um grid ou grade, formado por linhas e colunas. Neste documento, exploraremos os conceitos básicos do CSS Grid e como ele pode ser usado para criar layouts modernos e flexíveis.</p>
+    </section>
+    <section id="sessao2">
+      <h2>Sessão 2: Conceitos Fundamentais</h2>
+      <p>Nesta sessão, vamos abordar os conceitos fundamentais do CSS Grid. Você aprenderá sobre as propriedades básicas, como display: grid, grid-template-rows, grid-template-columns e grid-gap. Exploraremos como definir e controlar as dimensões das linhas e colunas do grid, bem como a lacuna entre elas.</p>
+    </section>
+    <section id="sessao3">
+      <h2>Sessão 3: Posicionamento de Elementos</h2>
+      <p>Aqui, vamos explorar as várias maneiras de posicionar elementos dentro de um grid. Você aprenderá a usar as propriedades grid-row e grid-column para definir em qual célula do grid um elemento deve ser colocado. Além disso, discutiremos as diferentes unidades de medida que podem ser usadas para especificar o tamanho e a localização dos elementos.</p>
+    </section>
+    <section id="sessao4">
+      <h2>Sessão 4: Alinhamento e Espaçamento</h2>
+      <p>Nesta sessão, abordaremos o alinhamento e o espaçamento dos elementos dentro do grid. Você aprenderá sobre as propriedades justify-items, align-items, justify-content e align-content, que permitem alinhar os elementos horizontal e verticalmente no grid. Também exploraremos como distribuir o espaço disponível entre as células do grid usando as propriedades justify-self e align-self.</p>
+    </section>
+    <section id="sessao5">
+      <h2>Sessão 5: Grids Aninhados e Áreas Nomeadas</h2>
+      <p>Aqui, discutiremos como criar grids aninhados e usar áreas nomeadas para organizar e posicionar elementos de forma mais intuitiva. Você aprenderá como criar grids dentro de células de outros grids e como usar a propriedade grid-template-areas para nomear e posicionar áreas específicas do grid.</p>
+    </section>
+    <section id="sessao6">
+      <h2>Sessão 6: Responsividade e Media Queries</h2>
+      <p>Nesta sessão, exploraremos como tornar os layouts do CSS Grid responsivos usando media queries. Você aprenderá a modificar o número de colunas e o tamanho das células do grid com base no tamanho da tela do dispositivo. Discutiremos como usar as propriedades @media e min-width para aplicar estilos diferentes em diferentes resoluções de tela.</p>
+    </section>
+    <section id="sessao7">
+      <h2>Sessão 7: Recursos Avançados e Considerações Finais</h2>
+      <p>Na última sessão, discutiremos recursos avançados do CSS Grid, como a propriedade grid-auto-flow, que controla como os elementos são automaticamente posicionados no grid. Abordaremos também algumas considerações finais, como o suporte a navegadores e a compatibilidade com versões anteriores do CSS. Além disso, forneceremos recursos adicionais para você se aprofundar no assunto.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 CSS Grid</p>
+  </footer>
+</body>
+</html>
